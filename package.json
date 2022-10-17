@@ -1,0 +1,19 @@
+{
+  "name": "note-app",
+  "version": "1.0.0",
+  "description": "Midterm_Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Escurel-Mae25/note-app.git"
+  },
+  "author": "Mae Escurel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Escurel-Mae25/note-app/issues"
+  },
+  "homepage": "https://github.com/Escurel-Mae25/note-app#readme"
+}
