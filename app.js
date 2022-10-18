@@ -29,14 +29,15 @@ if(cmd[2] === 'read') // import present
     console.log (read)
 }
 
-
-if(cmd[2] === "delete") {
+//delete from the note.txt
+if(cmd[2] === "delete") 
+{
     const id = cmd[3]
     const oldNote = read ()
     del (id, oldNote)
     console.log (del)
     }
- 
+ // update function
     if (cmd[2]== 'update') {
         note  = {
             id: cmd[3],
@@ -46,6 +47,7 @@ if(cmd[2] === "delete") {
     
         const oldNote = read ()
         update (note, oldNote)
+        // update the latest data
         const present = require('./present')
         present(read())
         console.log (update)
