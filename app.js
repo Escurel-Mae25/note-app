@@ -36,16 +36,20 @@ if(cmd[2] === "delete") {
     del (id, oldNote)
     console.log (del)
     }
-  
- const note = {}
- if (cmd[2]== 'update') {
-    let note  = {
-        id: cmd[3],
-        title: cmd[4],
-        body: cmd[5]
-    }
-    const oldNote = read ()
-    update (note, oldNote)
-    console.log (update)
- }  
+ 
+    if (cmd[2]== 'update') {
+        note  = {
+            id: cmd[3],
+            title: cmd[4],
+            body: cmd[5]
+        }
+    
+        const oldNote = read ()
+        update (note, oldNote)
+        const present = require('./present')
+        present(read())
+        console.log (update)
+    
+     }  
+        
     
