@@ -1,13 +1,16 @@
 const fs = require ('fs')
+const cmd = process.argv
+
 const update = function (note, oldNote) {
 const updateData = JSON.parse(oldNote)
 
-  const newNote = updateData.map (function(n,id) {
-    if (n.id =note.id){
+  const newNote = updateData.map (function(n,idx) {
+    if (n.id == note.id){
       n.title =note.title
       n.body =note.body
-      return n
+    
     }
+    return n
   })
   fs.writeFileSync('Note.txt', JSON.stringify(newNote))
 }

@@ -38,15 +38,15 @@ if(cmd[2] === "delete")
     console.log (del)
     }
  // update function
-    if (cmd[2]== 'update') {
-        note  = {
+    if (cmd[2] === 'update') {
+       let note  = {
             id: cmd[3],
             title: cmd[4],
             body: cmd[5]
         }
-    
-        const oldNote = read ()
-        update (note, oldNote)
+ 
+        const newNote = read ()
+        update (note, newNote)
         // update the latest data
         const present = require('./present')
         present(read())
