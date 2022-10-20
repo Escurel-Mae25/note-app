@@ -37,6 +37,7 @@ if(cmd[2] === "delete")
     del (id, oldNote)
     console.log (del)
     }
+    
  // update function
     if (cmd[2] === 'update') {
        let note  = {
