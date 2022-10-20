@@ -1,6 +1,4 @@
 const fs = require ('fs')
-const cmd = process.argv
-
 const update = function (note, oldNote) {
 const updateData = JSON.parse(oldNote)
 
@@ -8,7 +6,6 @@ const updateData = JSON.parse(oldNote)
     if (n.id == note.id){
       n.title =note.title
       n.body =note.body
-    
     }
     return n
   })
